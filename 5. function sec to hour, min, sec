@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int hour(int x){
+    return x/3600;
+}
+int min(int x){
+    return (x%3600)/60;
+}
+int sec(int x){
+    return (x%3600)%60;
+}
+
+int main() {
+    int t;
+    scanf("%d", &t);
+    printf("%d초는\n", t);
+    printf("%02d시간 %02d분 %02d초 입니다.\n", hour(t), min(t), sec(t));
+    return 0;
+}
