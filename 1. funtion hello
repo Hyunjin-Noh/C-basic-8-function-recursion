@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void hello() {
+    printf("안녕하세요.\n");
+}
+int main() {
+    hello();
+    printf("제이름은 C언어 입니다.\n");
+    hello();
+    printf("정말 반갑습니다.\n");
+    hello();
+    printf("저는 이곳에서 사용되는 함수 입니다.");
+    return 0;
+}
