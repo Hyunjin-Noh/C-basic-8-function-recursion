@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>//의 pow 함수를 직접 구현해보는 실습
+
+int makenowpow(int a, int n){
+    int c=1;
+    for(int i=1;i<=n;i++){
+        c*=a;
+    }
+    return c;
+}
+
+void main(){
+    int a, n;
+    scanf("%d %d", &a, &n);
+    printf("%d", makenowpow(abs(a), abs(n)));
+    return 0;
+}
