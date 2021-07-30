@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+char grade(int n){
+    if (n>=90&&n<=100) return 'A';
+    else if (n>=80&&n<90) return 'B';
+    else if (n>=70&&n<80) return 'C';
+    else if (n>=60&&n<70) return 'D';
+    else if (n<60) return 'F';
+}
+
+void main(){
+    int n;
+    while(1){
+        scanf("%d", &n);
+        if (n==-1) break;
+        else printf("당신의 학점은 %c 입니다.\n", grade(n));
+    }
+    return 0;
+}
