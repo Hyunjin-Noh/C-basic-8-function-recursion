@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int sum(int n){
+    if (n==0)  return 0;//반환 값이 int인데 합에 영향이 안 가게 0 반환
+    return n+sum(n-1);
+}
+
+void main(){
+    int n;
+    scanf("%d", &n);
+    sum(n);
+    printf("%d",sum(n));
+    return 0;
+}
